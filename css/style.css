@@ -3,4 +3,7 @@
 }
 .feature-card:hover {
  transform: translateY(-10px);
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
