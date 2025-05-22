@@ -32,7 +32,7 @@ body {
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   /* Puedes agregar aquí el background-image: url('ruta/imagen.jpg'); */
   /* background-size: cover; */
@@ -40,5 +40,40 @@ body {
 }
 
 .feature-card:hover {
-  transform: scale(1.08) translate
+  transform: scale(1.08) translateY(-10px);
+  box-shadow: 0 10px 32px rgba(0,0,0,0.2);
+}
+
+.feature-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  padding: 1rem;
+  text-align: center;
+}
+
+.feature-card:hover .feature-card-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Opcional: para mostrar un pequeño efecto en el texto */
+.feature-card-overlay h3, 
+.feature-card-overlay p {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.feature-card:hover .feature-card-overlay h3,
+.feature-card:hover .feature-card-overlay p {
+  transform: translateY(0);
+  opacity: 1;
 }
