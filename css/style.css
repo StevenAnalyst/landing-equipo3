@@ -1,19 +1,44 @@
 /* css/styles.css */
 :root {
- --primary-color: #2c3e50;
- --secondary-color: #3498db;
- --font-primary: 'Roboto', sans-serif;
- --transition-base: all 0.3s ease;
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --font-primary: 'Roboto', sans-serif;
+  --transition-base: all 0.3s ease;
 }
 
 body {
- font-family: var(--font-primary);
+  font-family: var(--font-primary);
 }
 
-
-
 .hero-grid {
- display: grid;
- grid-template-columns: repeat(2, 1fr);
- gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.features {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 0;
+}
+
+.feature-card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: #ccc; /* Aquí puedes poner una imagen de fondo con background-image */
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Puedes agregar aquí el background-image: url('ruta/imagen.jpg'); */
+  /* background-size: cover; */
+  /* background-position: center; */
+}
+
+.feature-card:hover {
+  transform: scale(1.08) translate
 }
