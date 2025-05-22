@@ -1,4 +1,3 @@
-
 /* css/styles.css */
 :root {
  --primary-color: #2c3e50;
@@ -9,16 +8,12 @@
 
 body {
  font-family: var(--font-primary);
-
-.feature-card {
- transition: transform 0.3s ease;
 }
 
-.feature-card:hover {
- transform: translateY(-10px);
- }
-  
-.footer{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+
+
+.hero-grid {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 2rem;
 }
