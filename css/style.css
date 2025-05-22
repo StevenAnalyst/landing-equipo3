@@ -40,6 +40,11 @@ body {
 }
 
 .feature-card:hover {
+
+  transform: scale(1.08) translate
+
+}
+
   transform: scale(1.08) translateY(-10px);
   box-shadow: 0 10px 32px rgba(0,0,0,0.2);
 }
@@ -77,3 +82,35 @@ body {
   transform: translateY(0);
   opacity: 1;
 }
+
+/* estilos css footer inicio */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    width: 100%;
+    max-height: 20%;
+    background-color: rgb(172, 168, 168);
+}
+
+.whatsapp a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.email a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.instagram a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.copyright{
+    font-size: 20px;
+    grid-column: 2;
+ /* estilos css footer fin */
