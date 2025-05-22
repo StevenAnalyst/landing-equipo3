@@ -40,11 +40,6 @@ body {
 }
 
 .feature-card:hover {
-
-  transform: scale(1.08) translate
-
-}
-
   transform: scale(1.08) translateY(-10px);
   box-shadow: 0 10px 32px rgba(0,0,0,0.2);
 }
@@ -113,4 +108,5 @@ body {
 .copyright{
     font-size: 20px;
     grid-column: 2;
+}
  /* estilos css footer fin */
